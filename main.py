@@ -15,6 +15,7 @@ async def main_page() ->dict[str,str]:
     ]
 )
     driver.get('https://google.com')
+    driver.close()
     return {
         "message":"Hello from fastapi"
     }
