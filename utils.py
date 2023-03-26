@@ -2,14 +2,10 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from typing import Union
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-import codecs,string
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
-import PIL.Image as Img
 from selenium.webdriver.common.action_chains import ActionChains
-from time import sleep
 import re
 
 
@@ -123,9 +119,3 @@ def checking_for_js_hovers(link:str)->bool:
         return False
 
 
-
-
-
-
-if __name__ == "__main__":
-    checking_for_js_hovers()
