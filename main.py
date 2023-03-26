@@ -11,7 +11,9 @@ app = FastAPI()
 async def main_page() ->dict[str,str]:
     driver = get_webdriver(
     [
-        "--headless"
+        "--headless",
+        "--no-sandbox",
+        '--disable-dev-shm-usage'
     ]
 )
     driver.get('https://google.com')
